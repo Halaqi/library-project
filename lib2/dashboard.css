@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(34, 34, 2);
+    display: flex;
+}
+.profile-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid;
+    flex-shrink: 0;
+}
+.profile-photo img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 17PX;
+}
+.profile h2{
+    font-size: 16px;
+}
+.menu{
+    background-color: rgb(68, 55, 40);
+    width: 55px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius:8px ;
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+ul li a:hover , .active , .data-info .box:hover{
+    background-color: rgb(89, 75, 55);
+}
+.log-out{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{  
+    background-image: url("./photos/Content.img"); 
+    background-size: cover;
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    padding: 15px;
+    margin: 10px 10px;
+    display: flex;
+    text-align: center;
+    background-color:  rgb(68, 55, 40);
+    border-radius: 5px;
+    justify-content: space-between ;
+    width: 500px;
+    
+}
+.title-info p{
+    font-size: 20px;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: rgba(173, 118, 52, 0.791);
+    border-radius: 5px;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box .data p{
+    text-align: center;
+    font-size: 25px;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}

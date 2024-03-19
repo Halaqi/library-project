@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(34, 34, 2);
+    display: flex;
+}
+.UserMenu{
+    background-color: rgb(68, 55, 40);
+    width: 55px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    transition: 0.5s ;
+}
+.UserMenu:hover{
+    width: 220px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius:8px ;
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+ul li a:hover ,:active,.user-data-info .box:hover{
+    background-color: rgb(89, 75, 55);
+}
+ul li a i{
+    font-size: 30px;
+}
+ul li a p{
+    margin: 10px;
+}
+.log-out{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.UserContent{
+    background-image: url("./photos/Content.img"); 
+    background-size: cover;
+    width: 100%;
+    margin: 10px;
+}
+.user-title-info{
+    padding: 15px;
+    margin: 10px 10px;
+    display: flex;
+    text-align: center;
+    background-color:  rgb(68, 55, 40);
+    border-radius: 5px;
+    justify-content: space-between ;
+    width: 500px;
+}
+.title-info p{
+    font-size: 20px;
+}
+.user-data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.user-data-info .box{
+    background-color: rgba(173, 118, 52, 0.791);
+    border-radius: 5px;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+
+}
+.user-data-info .box i{
+    font-size: 40px;
+}
+.user-data-info .box .data p{
+    text-align: center;
+    font-size: 25px;
+}
+.user-data-info .box .data span{
+    font-size: 30px;
+}

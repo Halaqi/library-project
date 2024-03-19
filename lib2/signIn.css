@@ -1,0 +1,98 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("photos/back2.jpg");
+    background-size: cover;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 550px;
+    background: rgba(0, 0,0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+}
+input[type="text"],[type="password"]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 45px;
+    border-bottom: 2px solid #fff;
+    background: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+input[type="text"]{
+    top: 140px;
+    left: 50px;
+}
+input[type="password"]{
+    top:210px;
+    left: 50px;
+}
+input[value="Log in"]{
+    position: absolute;
+    top: 420px;
+    width: 130px;
+    left:150px;
+    height: 35px;
+    background: bisque;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+::placeholder{
+    color: #fff;
+}
+input[value="Log in"]:hover{
+    background: #fff;
+    color:#000 ;
+}
+p{
+    color: #fff;
+    top: 490px;
+    left: 60px;
+    position: absolute;
+    cursor: pointer;
+}
+p:hover{
+    color: antiquewhite;
+}
+.student-select {
+    position: absolute;
+    width: 200px;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background:none;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    top: 300px;
+    left: 50px;
+    border-radius: 100px;
+    border-bottom: 2px solid #fff;
+}
+
+.student-select option :nth-child(1){
+    color: #000000;
+    
+}
+.student-select option :nth-child(2) {
+    color: green;
+}
